@@ -45,7 +45,7 @@ public class MovieRecommender{
 		ArrayList<Double> scores = new ArrayList<Double>();
 
 		try{
-			fileStream = new FileInputStream("/home/dcross/Documents/github/big-data-exercises/src/test/java/nearsoft/academy/bigdata/recommendation/movies.txt.gz");
+			fileStream = new FileInputStream(path);
 			gzipStream = new GZIPInputStream(fileStream);
 			decoder = new InputStreamReader(gzipStream, encoding);
 			buffered = new BufferedReader(decoder);
